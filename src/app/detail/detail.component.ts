@@ -10,8 +10,8 @@ import { GlobalvarService } from './../globalvar.service';
 export class DetailComponent implements OnInit {
 
   constructor(private route: ActivatedRoute, public globalvar: GlobalvarService) 
-  { 
-
+  {
+    
   }
 
   judul_i:string;
