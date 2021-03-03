@@ -11,6 +11,12 @@ input works!
   <button (click)="addnote()">Add</button>
 
   <p>List</p>
+  <div *ngFor="let j of arr_judul; let i = index">
+    {{ i+1 }}. {{j}}  <button (click)="seedetail(i)">See detail</button>
+  </div>
+
+
+  
 
 
 </html>

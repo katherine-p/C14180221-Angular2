@@ -7,6 +7,7 @@ export class GlobalvarService {
   public isi = [];
   public tgl = [];
   public isfav = [];
+  public len = 0;
 
   constructor() { }
 
@@ -40,11 +41,30 @@ export class GlobalvarService {
     return this.tgl[i];
   }
 
+  public getJudul()
+  {
+    return this.judul;
+  }
+  public getIsi()
+  {
+    return this.isi;
+  }
+  public getTgl()
+  {
+    return this.tgl;
+  }
+
   public addNote(j, isi, t)
   {
     this.judul.push(j);
     this.isi.push(isi);
     this.tgl.push(t);
+    this.len++;
+  }
+
+  public getLen()
+  {
+    return this.len;
   }
 
 }
