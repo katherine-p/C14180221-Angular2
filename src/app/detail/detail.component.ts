@@ -9,7 +9,7 @@ import { GlobalvarService } from './../globalvar.service';
 })
 export class DetailComponent implements OnInit {
 
-  constructor(private route: ActivatedRoute, private router: Router, public globalvar: GlobalvarService) 
+  constructor(private route: ActivatedRoute, public globalvar: GlobalvarService) 
   { 
 
   }
