@@ -25,7 +25,7 @@ export class GlobalvarService {
   }
   public setIsfav(i, x:boolean = true)
   {
-    this.judul[i] = x;
+    this.isfav[i] = x;
   }
 
   public getJudul_index(i)
@@ -40,6 +40,10 @@ export class GlobalvarService {
   {
     return this.tgl[i];
   }
+  public getisFav_index(i)
+  {
+    return this.isfav[i];
+  }
 
   public getJudul()
   {
@@ -53,12 +57,17 @@ export class GlobalvarService {
   {
     return this.tgl;
   }
+  public getisFav()
+  {
+    return this.isfav;
+  }
 
   public addNote(j, isi, t)
   {
     this.judul.push(j);
     this.isi.push(isi);
     this.tgl.push(t);
+    this.isfav.push(false);
     this.len++;
   }
 

@@ -3,7 +3,16 @@ detail works!
 </p> -->
 
 <html style="text-align:center;">
-  <h3>{{ judul_i }}</h3><br>
+  <br><br>
+  <label *ngIf="fav_i == true; then showunfav else showfav"></label>
+  <ng-template #showfav>
+    <button (click)="turnfav()">Favorite</button>
+  </ng-template>
+  <ng-template #showunfav>
+    <button (click)="turnfav()">Unfavorite</button>
+  </ng-template>
+  
+  <h3>{{ judul_i }}</h3>
 
   <p>{{ isi_i }}</p><br>
   

@@ -11,6 +11,7 @@ import { FavComponent } from './fav/fav.component';
 import { RouterModule, Routes } from '@angular/router';
 import { GlobalvarService } from './globalvar.service';
 
+
 const ROUTES : Routes = [
   { path : 'input', component: InputComponent },
   { path : 'detail', component: DetailComponent },
@@ -24,4 +25,7 @@ const ROUTES : Routes = [
   bootstrap:    [ AppComponent ],
   providers: [GlobalvarService]
 })
-export class AppModule { }
+export class AppModule 
+{
+
+}
