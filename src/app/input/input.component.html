@@ -2,15 +2,25 @@
 input works!
 </p> -->
 
+<style>
+  .input{
+    
+  }
+</style>
+
 <html>
   <h4>Input note</h4>
 
-  Judul <input type="text" [(ngModel)]="in_judul"><br>
-  Isi <input type="text" [(ngModel)]="in_isi"><br>
-  Tanggal <input type="date" [(ngModel)]="in_tgl"><br>
+  <label for="">Judul</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+  <input type="text" [(ngModel)]="in_judul"><br><br>
+  <label for="">Isi</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <input type="text" [(ngModel)]="in_isi"><br><br>
+  <label for="">Tanggal</label>&nbsp;
+  <input type="date" [(ngModel)]="in_tgl"><br><br>
   <button (click)="addnote()">Add</button>
 
-  <p>List</p>
+  <br><br> 
+  <h4>List</h4>
   <div *ngFor="let j of arr_judul; let i = index">
     {{ i+1 }}. {{j}}  <button (click)="seedetail(i)">See detail</button>
   </div>

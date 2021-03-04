@@ -3,10 +3,13 @@
   Start editing to see some magic happen :)
 </p> -->
 
-<html style="text-align:center;">
-  <h1>Note</h1>
-
-  <button (click)="openInput()">Input Note</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <button (click)="openFav()">Your Favorites</button>
+<html>
+  <div style="text-align:center;">
+    <h1>Note</h1>
+    
+    <button (click)="openInput()">Input Note</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <button (click)="openFav()">Your Favorites</button>
+  </div>
+  
   <router-outlet></router-outlet>
 </html>

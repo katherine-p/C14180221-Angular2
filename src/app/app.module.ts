@@ -14,7 +14,8 @@ import { GlobalvarService } from './globalvar.service';
 const ROUTES : Routes = [
   { path : 'input', component: InputComponent },
   { path : 'detail', component: DetailComponent },
-  { path : 'fav', component: FavComponent }
+  { path : 'fav', component: FavComponent },
+  { path : 'detail/:index', component: DetailComponent }
 ]
 
 @NgModule({
